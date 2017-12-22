@@ -6,14 +6,12 @@
 
 #include "hitechnic-irrecv.h"
 
-task main()
-{
+task main() {
 	sbyte _motA = 0;
   sbyte _motB = 0;
   sbyte _motC = 0;
   sbyte _motD = 0;
- 	while(1)
- 	{
+ 	while(1) {
  		// Min: -100 Max: 100 Mid: 0
   	HTIRRreadChannel(HTIRR, 1, _motA, _motC);
   	HTIRRreadChannel(HTIRR, 2, _motB, _motD);
